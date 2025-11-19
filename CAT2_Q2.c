@@ -3,20 +3,20 @@
 int main() {
     float hours, wage, gross_pay, tax, net_pay;
 
-    // Input
+    
     printf("Enter hours worked in a week: ");
     scanf("%f", &hours);
 
     printf("Enter hourly wage: ");
     scanf("%f", &wage);
 
-    // Calculate gross pay
+    
     if (hours <= 40)
         gross_pay = hours * wage;
     else
         gross_pay = (40 * wage) + ((hours - 40) * wage * 1.5); // Overtime pay
 
-    // Calculate tax
+    
     if (gross_pay <= 600)
         tax = 0.15 * gross_pay;
     else
